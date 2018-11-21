@@ -26,9 +26,7 @@ class App {
     this.express.use('view engine', 'njk')
   }
 
-  routes () {
-    this.express.use(require('./routes'))
-  }
+  routes () {}
 }
 
 module.exports = new App().express
